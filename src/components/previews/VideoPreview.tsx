@@ -23,7 +23,7 @@ import CustomEmbedLinkMenu from '../CustomEmbedLinkMenu'
 
 const Plyr = dynamic(() => import('plyr-react'), {
   ssr: false,
-  loading: () => <Loading /> 
+  loading: () => <Loading loadingText="Loading video..." /> 
 })
 
 const VideoPlayer: FC<{
